@@ -1,0 +1,40 @@
+@media (orientation: landscape)
+{
+	.horizontal_nav
+	{
+		display: flex;
+	}
+
+	.burger
+	{
+		display: none;
+	}
+
+	.horizontal_link
+	{
+		color: #DFDFDF;
+		transition: .2s;
+	}
+
+	.horizontal_link:hover
+	{
+		color: #FFFFFF;
+		transition: .2s;
+	}
+
+}
+
+@media (orientation: portrait)
+{
+
+	.horizontal_nav
+	{
+		display: none;
+	}
+
+	.burger
+	{
+		display: flex;
+	}
+
+}

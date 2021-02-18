@@ -1,0 +1,287 @@
+
+
+#toggle
+{
+  display: none;
+}
+/* MENU NEXT*/
+
+.menu
+{
+  z-index: 100;
+  opacity: .9;
+  position: fixed;
+  width: 100%;
+  height: 4vh;
+  padding: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141414;
+  transition: .5s;
+}
+
+.menu:hover
+{
+  opacity: 1;
+  transition: .5s;
+}
+
+/* LOGO NEXT */
+
+.logo, .logo_link
+{
+  height: 100%;
+  transition: .2s;
+}
+
+.logo:hover
+{
+  filter: brightness(150%);
+  transition: .2s;
+}
+
+/* HORIZONTAL_NAVIGATION NEXT */
+
+.horizontal_nav
+{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* BURGER NEXT*/
+
+.burger 
+{
+  height: 4vh;
+  width: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.burger_stick1
+{
+  width: 100%;
+  height: 5%;
+  background-color: #d6d6d8;
+  transition: .5s;
+}
+
+.burger_stick2 
+{
+  width: 100%;
+  height: 5%;
+  background-color: #d6d6d8;
+  transition: .5s;
+}
+
+.burger_stick3 
+{
+  width: 100%;
+  height: 5%;
+  background-color: #d6d6d8;
+  transition: .5s;
+}
+
+/* BURGER_ANIMATION NEXT */
+
+#toggle:checked ~ .menu > #label_checkbox > .burger
+{
+  transform: rotate(360deg);
+  transition: .5s;
+}
+
+#toggle:checked ~ .menu > #label_checkbox > .burger > .burger_stick1
+{
+  transform: translateY(1.9vh) rotate(45deg);
+}
+
+#toggle:checked ~ .menu > #label_checkbox > .burger > .burger_stick2
+{
+  opacity: 0;
+}
+
+#toggle:checked ~ .menu > #label_checkbox > .burger > .burger_stick3
+{
+  transform: translateY(-1.9vh) rotate(-45deg);
+}
+
+/* VERTICAL_NAV NEXT */
+
+.vertical_nav
+{
+  width: 100%;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 99;
+  left: 100%;
+  background-color: #141414;
+  transition: .5s;
+}
+
+.vertical_link
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #DFDFDF;
+}
+
+/* VERTICAL_NAV_ANIMATION NEXT*/
+
+#toggle:checked ~ .vertical_nav
+{
+  left: 0%;
+  transition: .5s;
+}
+
+/* HEADER NEXT */
+
+.header
+{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(img/header_ultrawide.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header_h1
+{
+  
+  font-family: 'Comfortaa';
+  font-size: 4vh;
+  padding: 15vh;
+  color: #DFDFDF;
+}
+
+.iphone
+{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(img/ipad1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: -15px 50px 100px 25px;
+  position: relative;
+}
+
+.iphone_h1
+{
+  font-family: 'Comfortaa';
+  font-size: 4vh;
+  margin: 2vh;
+  padding: 1vh;
+  color: #DFDFDF;
+  background-color: #765B46; /* #333333 */ /* 8a6142 */
+}
+
+.ipad
+{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(img/294-2941402_world-wallpaper-hd-ipad-pro.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ipad_h1
+{
+  font-family: 'Comfortaa';
+  font-size: 4vh;
+  margin: 2vh;
+  padding: 1vh;
+  color: #DFDFDF;
+  background-color: #333333; /* #333333 */ /* 8a6142 */
+}
+
+
+.macbook
+{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(img/macbook.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.macbook_h1
+{
+  font-family: 'Comfortaa';
+  font-size: 4vh;
+  margin: 2vh;
+  padding: 1vh;
+  color: #DFDFDF;
+  background-color: #0073c6; /* #333333 */ /* 8a6142 */
+}
+
+.mac_pc
+{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(img/mac_pc.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mac_pc_h1
+{
+  font-family: 'Comfortaa';
+  font-size: 4vh;
+  margin: 2vh;
+  padding: 1vh;
+  color: #DFDFDF;
+  background-color: #77BAC8; /* #333333 */ /* 8a6142 */
+}
+
+.pineapple
+{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(img/pineapple_fruit_yellow_168402_2560x1080.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pineapple_h1
+{
+  display: flex;
+  font-family: 'Comfortaa';
+  font-size: 4vh;
+  margin: 2vh;
+  padding: 1vh;
+  color: #DFDFDF;
+  background-color: #AE9D41;
+}
+
