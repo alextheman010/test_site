@@ -9,19 +9,12 @@
 .menu
 {
   z-index: 100;
-  opacity: .9;
   height: 4vh;
   padding: 2vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #141414;
-  transition: .5s;
-}
-
-.menu:hover
-{
-  opacity: 1;
   transition: .5s;
 }
 
